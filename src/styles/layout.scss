@@ -1,0 +1,130 @@
+.app-header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  line-height: 50px;
+  padding: 0;
+  overflow: hidden;
+  background: $header-background-color;
+  .el-breadcrumb {
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 15px;
+    .no-redirect {
+      color: #97A8BE;
+      cursor: text;
+    }
+  }
+  .right-menu {
+    float: right;
+  }
+  @extend .clearfix;
+}
+.navbar-item {
+  float: left;
+  cursor: pointer;
+  color: $header-color;
+  transition: background .3s;
+  -webkit-tap-highlight-color:transparent;
+  &:hover, &:focus {
+    background: $header-hover-background-color;
+    color: $header-hover-color;
+  }
+  .navbar-item__inner {
+    padding: 0 15px;
+  }
+}
+.navbar-icon {
+  line-height: 50px;
+  font-size: 20px;
+  vertical-align: top;
+}
+.message-badge-wrapper {
+  position: relative;
+}
+.message-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $--color-danger;
+}
+.app-center {
+  &.el-popper[x-placement^=bottom] {
+    margin-top: 1px;
+  }
+}
+.app-center-menu {
+  margin: 0;
+  padding: 0;
+}
+.app-center-menu-item {
+  list-style: none;
+  padding: 0 10px;
+  min-width: 300px;
+  line-height: 32px;
+  height: 32px;
+  &:hover {
+    color: $--color-primary;
+  }
+}
+.app-center-menu-item__label {
+  margin-left: 20px;
+  &.has-icon {
+    margin-left: 6px;
+  }
+}
+.app-logo {
+  padding: 0 10px;
+  font-weight: 600;
+  img {
+    height: 18px;
+    vertical-align: middle;
+  }
+  span {
+    margin-left: 8px;
+  }
+}
+.el-breadcrumb__inner {
+  a {
+    color: $header-color;
+  }
+}
+.el-breadcrumb__separator {
+  color: $header-color;
+}
+.main-layout {
+  height: calc(100% - 50px);
+  margin-top: 50px;
+  background-color: #fff;
+}
+.sidebar-layout {
+  background-color: #fff;
+  border-right: $border;
+  width: auto;
+  height: 100%;
+  .el-menu-vertical {
+    border: none;
+  }
+  .el-menu-vertical:not(.el-menu--collapse) {
+    width: 190px;
+  }
+  .el-menu--collapse {
+    width: 64px;
+  }
+}
+.wrapper-center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.side-pane {
+  width: auto;
+  padding: 20px;
+  border-right: $border;
+}

@@ -1,0 +1,42 @@
+.map-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.map-main {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+}
+.map-toolbar {
+  padding: 6px 20px;
+  border-bottom: solid 1px $--border-color-lighter;
+  @extend .clearfix;
+}
+.map-viewer {
+  flex: 1;
+  canvas {
+    display: block;
+  }
+}
+.minimap-viewer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: dashed 1px $--border-color-base;
+}
+.map-settings {
+  border-left: $border;
+  padding: 20px;
+  .el-checkbox {
+    display: block;
+    margin-right: 0;
+  }
+}
+.map-properties {
+  border-left: $border;
+  padding: 20px;
+}

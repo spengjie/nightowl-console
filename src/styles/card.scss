@@ -1,0 +1,33 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: $card-border-radius;
+  background: $--color-white;
+}
+.card-border {
+  border: 1px solid $card-border-color;
+}
+.card-shadow {
+  box-shadow: $card-shadow;
+}
+.card__header, .card__footer {
+  padding: $padding-smaller $padding;
+}
+.card__header {
+  border-bottom: 1px solid $card-border-color;
+}
+.card__footer {
+  border-top: 1px solid $card-border-color;
+}
+.card__body {
+  flex: 1;
+  padding: $padding;
+  overflow: hidden;
+}
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$layout-margin;
+  margin-bottom: -$layout-margin;
+}

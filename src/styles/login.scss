@@ -1,0 +1,33 @@
+.login-page {
+  background: $header-background-color;
+  background-position: center;
+  background-size: cover;
+}
+.login-wrap {
+  margin: 0 auto;
+  width: 400px;
+  .el-alert {
+    margin-bottom: 10px;
+  }
+  .el-divider {
+    background-color: $header-color;
+  }
+  .el-divider__text {
+    background: $header-background-color;
+    color: $header-color;
+  }
+  .login-logo {
+    height: 180px;
+  }
+  .system-name {
+    font-size: 32px;
+    font-weight: 600;
+    color: $header-color;
+    text-align: center;
+  }
+  .system-statement {
+    margin: 22px 0;
+    color: $--color-text-secondary;
+    text-align: center;
+  }
+}

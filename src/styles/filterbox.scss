@@ -1,0 +1,114 @@
+.highlight-text {
+  color: $--color-primary;
+  font-weight: bold;
+}
+.filterbox {
+  .el-tag {
+    margin: 4px 6px 4px 0;
+  }
+  .el-tag--info {
+    .el-tag__close{
+      &.el-icon-close {
+        color: #909399;
+        background-color: #C0C4CC;
+        &:hover {
+          color: #FFF;
+          background-color: #909399;
+        }
+      }
+    }
+  }
+  .el-tag--danger {
+    .el-tag__close{
+      &.el-icon-close {
+        color: #F56C6C;
+        background-color: #FABDC4;
+        &:hover {
+          color: #FFF;
+          background-color: #F56C6C;
+        }
+      }
+    }
+  }
+  .el-tag__close.el-icon-close::before {
+    display: block;
+    -webkit-transform: translate(0,.5px);
+    transform: translate(0,.5px);
+  }
+}
+.filterbox__inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $--input-background-color;
+  border-radius: $--input-border-radius;
+  border: 1px solid #DCDFE6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $--input-font-color;
+  font-size: inherit;
+  transition: $--border-transition-base;
+  flex-wrap: wrap;
+  &:hover {
+    border-color: #C0C4CC;
+  }
+  &.is-focus {
+    outline: none;
+    border-color: $--color-primary;
+  }
+  .el-input__inner {
+    border: 0;
+    padding-left: 0;
+    background-color: transparent;
+  }
+}
+.filterbox-popover {
+  padding: 0;
+  overflow-y: auto;
+  max-height: calc(100% - 200px);
+  &.nomatch {
+    border: 0;
+  }
+}
+.filterbox-input__icon {
+  line-height: 42px;
+}
+.el-input--medium .filterbox-input__icon {
+  line-height: 38px;
+}
+.el-input--small .filterbox-input__icon {
+  line-height: 34px;
+}
+.el-input--mini .filterbox-input__icon {
+  line-height: 30px;
+}
+.filterbox-suggestion {
+  padding: 10px 0;
+  margin: 0;
+  .el-divider--horizontal {
+    margin: 4px 0;
+  }
+}
+.suggestion-item {
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  min-width: 300px;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  color: #606266;
+  cursor: pointer;
+  outline: none;
+  &:focus, &:hover, &.is-selected {
+    background-color:$--dropdown-menuItem-hover-fill;
+    color:$--color-primary;
+  }
+  .hint-text {
+    font-size: 13px;
+    float: right;
+    color: #8492a6;
+  }
+}

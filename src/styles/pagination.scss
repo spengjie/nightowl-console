@@ -1,0 +1,11 @@
+.page-button {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.summary-text {
+  white-space: nowrap;
+  margin: auto $summary-text-margin;
+  font-weight: bold;
+  font-size: $--font-size-base;
+}

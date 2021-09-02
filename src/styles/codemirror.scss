@@ -1,0 +1,16 @@
+.CodeMirror {
+  height: auto;
+}
+.CodeMirror-foldmarker {
+  margin-left: 2px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: monospace;
+  padding: 0 4px;
+  text-shadow: initial;
+  border: 1px solid blue;
+}
+.cm-s-monokai .CodeMirror-foldmarker {
+  color: #75715e;
+  border: 1px solid #75715e;
+}

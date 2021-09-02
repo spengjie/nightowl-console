@@ -1,0 +1,23 @@
+// Common
+$shadow: 0 1px 3px rgba(26,26,26,.1);
+$border: solid 1px $--border-color-base;
+$padding: 20px;
+$padding-smaller: 10px;
+$margin: 10px;
+$margin-smaller: 6px;
+
+//
+$summary-text-margin: $margin-smaller;
+
+// Layout
+$header-background-color: #242f3e;
+$header-hover-background-color: #131e2d;
+$header-color: #e0e0e0;
+$header-hover-color: #efefef;
+$layout-margin: $margin;
+
+// Card
+$card-shadow: $shadow;
+$card-border-radius: 2px;
+$card-border-color: $--card-border-color;
+$card-padding: $padding;

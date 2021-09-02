@@ -1,0 +1,19 @@
+.collapse {
+  .collapse__header {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    .collapse__icon {
+      margin-right: 6px;
+      color: inherit;
+      cursor: pointer;
+      transition: transform .1s;
+      &.is-collapsed {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .collapse__body {
+    margin: 10px 0 20px 20px;
+  }
+}

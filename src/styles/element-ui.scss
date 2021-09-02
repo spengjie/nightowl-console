@@ -1,0 +1,167 @@
+// cover some element-ui styles
+
+.el-alert__closebtn {
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+.el-button {
+  @include m(mini) {
+    & [class*="el-icon-"] + span {
+      margin-left: 0;
+    }
+  }
+  @include when(square) {
+    padding: $--button-padding-vertical;
+  }
+  @include m(medium) {
+    @include when(square) {
+      padding: $--button-medium-padding-vertical;
+    }
+  }
+  @include m(small) {
+    @include when(square) {
+      padding: $--button-small-padding-vertical;
+    }
+  }
+  @include m(mini) {
+    @include when(square) {
+      padding: $--button-mini-padding-vertical;
+    }
+  }
+}
+.el-dialog__headerbtn {
+  z-index: 1;
+}
+.el-divider--horizontal {
+  margin: 20px 0;
+}
+.el-form--inline .el-form-item {
+  margin-bottom: 0;
+}
+.el-form-item {
+  .el-form-item {
+    margin-bottom: 22px;
+  }
+  &--small.el-form-item, &--mini.el-form-item {
+    margin-bottom: 18px;
+  }
+}
+.el-form--inline {
+  .el-form-item {
+    margin-bottom: 0;
+  }
+}
+.el-link--inner {
+  line-height: normal;
+}
+@include b(menu) {
+  @include m(horizontal) {
+    & .el-menu-item {
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      margin: 0;
+      border-bottom: 2px solid transparent;
+      color: $--color-text-secondary;
+
+      a,
+      a:hover {
+        color: inherit;
+      }
+
+      &:not(.is-disabled):hover,
+      &:not(.is-disabled):focus{
+        background-color: #fff;
+      }
+    }
+    & .el-submenu {
+      float: left;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        .el-submenu__title {
+          color: $--color-text-primary;
+        }
+      }
+
+      & .is-active {
+        .el-submenu__title {
+          border-bottom: 2px solid $--color-primary;
+          color: $--color-text-primary;
+        }
+      }
+
+      & .el-submenu__title {
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 2px solid transparent;
+        color: $--color-text-secondary;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
+      & .el-submenu__icon-arrow {
+        position: static;
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-top: -3px;
+      }
+    }
+    & .el-menu-item.is-active {
+      border-bottom: 2px solid $--color-primary;
+      color: $--color-text-primary;
+    }
+  }
+}
+.el-menu-item {
+  i {
+    color: inherit;
+  }
+  .el-icon-svg {
+    color: inherit;
+  }
+  .icon {
+    width: 20px;
+    margin-right: 6px;
+  }
+  sup {
+    vertical-align: super;
+  }
+}
+.el-submenu__title {
+  i {
+    color: inherit;
+  }
+  .el-icon-svg {
+    color: inherit;
+  }
+}
+.el-radio__label {
+  vertical-align: middle;
+}
+.el-scrollbar {
+  height: 100%;
+  &__bar {
+    z-index: 200;
+  }
+}
+.el-tag+.el-tag {
+  margin-left: 10px;
+}
+.el-transfer-panel__item {
+  margin-left: 0;
+  display: block;
+}
+.el-tree-node:focus>.el-tree-node__content {
+    background-color: transparent;
+}
+.el-transfer-panel__list .el-checkbox {
+  margin-right: 30px;
+}

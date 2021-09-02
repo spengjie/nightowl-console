@@ -1,0 +1,44 @@
+.dashboard {
+  background-color: #f2f3f5;
+  padding: 0;
+  .vue-grid-layout {
+    background-color: #f2f3f5;
+  }
+  .vue-grid-item {
+    touch-action: none;
+    box-sizing: border-box;
+    &.vue-grid-placeholder {
+      background-color: $--color-primary-light-8;
+      opacity: initial;
+      border-radius: 4px;
+    }
+    &.vue-draggable-dragging{
+      transition: box-shadow 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+      box-shadow: 0 40px 64px 0 rgb(65 78 101 / 10%), 0 24px 32px 0 rgb(65 78 101 / 10%), 0 16px 16px 0 rgb(65 78 101 / 10%), 0 8px 8px 0 rgb(65 78 101 / 10%), 0 4px 4px 0 rgb(65 78 101 / 10%), 0 2px 2px 0 rgb(65 78 101 / 10%);
+    }
+  }
+}
+.widget {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px -1px rgb(152 162 179 / 30%), 0 1px 5px -2px rgb(152 162 179 / 30%);
+  border: 1px solid $card-border-color;
+  box-sizing: border-box;
+}
+.widget-header {
+  display: flex;
+  transition: background-color 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+  border-radius: 3px 3px 0 0;
+  .widget-title {
+    flex-grow: 1;
+    transition: background-color 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+    border-radius: 3px 3px 0 0;
+  }
+}
+.vue-draggable .widget-header:hover {
+  background-color: $--color-primary-light-9;
+}
+.vue-grid-item>.vue-resizable-handle:hover {
+  background-color: $--color-primary-light-9;
+}
